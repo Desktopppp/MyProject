@@ -12,7 +12,7 @@ import com.itheima.dao.IDao;
 import com.itheima.domain.Account;
 public class DaoImpl implements IDao{
 	private DataSource ds;
-	
+	private String abvc;
 	public DataSource getDs() {
 		return ds;
 	}
@@ -32,7 +32,7 @@ public class DaoImpl implements IDao{
 		int i = qr.update("insert into account values(?,?,?) ",acc.getId(),acc.getName(),acc.getMoney());
 		return i==1;
 	}
-	public void transfer(String src,String target,double money) {		//в╙ук
+	public void transfer(String src,String target,double money) {		//в╙О©╫О©╫
 		
 	}
 	
